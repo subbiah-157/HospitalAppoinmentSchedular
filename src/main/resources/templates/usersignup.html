@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="login.css">
+
+        <!-- ===== BOX ICONS ===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>User Sign Up</title>
+    </head>
+    <body>
+        <div class="login">
+            <div class="login__content">
+                <div class="login__img">
+                    <img decoding="async" src="img-login.svg" alt="">
+                </div>
+
+                <div class="login__forms">
+                    <form action="SignInfo" class="login__registre" method="post">
+                        <h1 class="login__title">Create Account</h1>
+
+                        <div class="login__box">
+                            <i class='bx bx-user login__icon'></i>
+                            <input type="text" placeholder="Username" class="login__input" name="username" required>
+                        </div>
+                        
+                        <div class="login__box">
+                            <i class='bx bx-at login__icon'></i>
+                            <input type="text" placeholder="Email" class="login__input" name="mail" required>
+                        </div>
+
+                        <div class="login__box">
+                            <i class='bx bx-lock-alt login__icon'></i>
+                            <input type="password" placeholder="Password" class="login__input" name="password" required>
+                        </div>
+                        <button type="submit" class="login__button" style="padding-left: 130px;padding-right: 130px;">Sign up</button>
+                        <div>
+                            <span class="login__account">Already I have an Account ?</span>
+                            <span class="login__signing"><a th:href="@{/userlogin}">Sign In</a></span>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

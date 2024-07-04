@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="login.css">
+        <!-- ===== BOX ICONS ===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <title>Doctor Sign Up</title>
+    </head>
+    <body>
+        <div class="login">
+            <div class="login__content">
+                <div class="login__img">
+                    <img decoding="async" src="doctor (1).png" alt="">
+                </div>
+                <div class="login__forms">
+                    <form action="appointment" class="login__registre">
+                        <h1 class="login__title">Create Account</h1>
+                        <div class="login__box">
+                            <i class='bx bx-user login__icon'></i>
+                            <input type="text" placeholder="Enter name" class="login__input" name="userName" required >
+                        </div>
+                        <div class="login__box">
+                            <i class='bx bx-at login__icon'></i>
+                            <input type="text" placeholder="Enter Email" class="login__input" name="password" required >
+                        </div>
+                        <div class="login__box">
+                            <i class='bx bx-lock-alt login__icon'></i>
+                            <input type="password" placeholder="Enter Password" class="login__input" required>
+                        </div>
+                        <
+                        <button type="submit" > Sign up</button>
+                        <div>
+                            <span class="login__account">Already have an Account ?</span>
+                            <span class="login__signin"><a th:href="@{/doctorlogin}">Sign In</a></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
